@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 </head>
 <body>
-    <canvas id="myChart"></canvas>
+   <canvas id="myChart" style ="height:30vh; width:50vw"></canvas>  
     <script>
         var ctx = document.getElementById('myChart');
         var scatterChart = new Chart(ctx, {
@@ -17,6 +17,21 @@
         datasets: [{
             label: 'Scatter Dataset',
             data: [{
+                x: 5,
+                y: 8,
+               
+            },
+            {
+                x: 2,
+                y: 8,
+               
+            },
+            {
+                x: 3,
+                y: 7,
+               
+            },
+            {
                 x: 5,
                 y: 8,
                
@@ -30,6 +45,7 @@
            
             fill: true, 
             pointBackgroundColor: 'Green',
+            pointBorderWidth: 3,
         }]
         ,
     },
